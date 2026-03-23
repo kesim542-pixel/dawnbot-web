@@ -3,49 +3,94 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="tiktok-developers-site-verification" content="5djp8EhNLOXQ0OfzIlQ3Yqlk69dZfxAj">
 <title>Privacy Policy - DawnBot</title>
 <style>
-  body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; background: #0a0a0a; color: #fff; }
-  h1, h2 { color: #00ff88; }
-  p { color: #aaa; line-height: 1.6; }
-  a { color: #00ff88; }
+  body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; color: #333; }
+  h1 { color: #1a1a2e; border-bottom: 2px solid #7c3aed; padding-bottom: 10px; }
+  h2 { color: #4a4a6a; margin-top: 30px; }
+  table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+  th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+  th { background: #f5f5f5; }
 </style>
 </head>
 <body>
 <h1>Privacy Policy</h1>
-<p>Last updated: March 22, 2026</p>
+<p><strong>Effective Date:</strong> March 22, 2026</p>
+<p><strong>Application Name:</strong> DawnBot</p>
+<p><strong>Developer:</strong> DawnBot Team</p>
 
-<h2>1. Information We Collect</h2>
+<h2>1. Introduction</h2>
+<p>This Privacy Policy explains how DawnBot ("we", "us", or "our") collects, uses, and protects your personal information when you use our application and its TikTok integration features.</p>
+
+<h2>2. Information We Collect</h2>
 <p>When you connect your TikTok account to DawnBot, we collect:</p>
-<p>• Your TikTok User ID (open_id)<br>
-• Your TikTok access token and refresh token<br>
-• Your TikTok display name (for confirmation purposes only)</p>
+<table>
+  <tr><th>Data Type</th><th>Purpose</th><th>Retention</th></tr>
+  <tr><td>TikTok User ID (open_id)</td><td>User identification</td><td>Session only</td></tr>
+  <tr><td>TikTok Display Name</td><td>Confirmation display</td><td>Session only</td></tr>
+  <tr><td>Access Token</td><td>API authentication</td><td>Until logout</td></tr>
+  <tr><td>Refresh Token</td><td>Token renewal</td><td>Until logout</td></tr>
+</table>
 
-<h2>2. How We Use Your Information</h2>
-<p>We use your TikTok access token solely to post videos to your TikTok profile when you explicitly request it through our Telegram bot. We do not use your data for any other purpose.</p>
+<h2>3. How We Use Your Information</h2>
+<p>We use your information exclusively to:</p>
+<ul>
+  <li>Authenticate your TikTok account</li>
+  <li>Post videos to your TikTok profile when you explicitly request it</li>
+  <li>Display your connected account name for confirmation</li>
+</ul>
+<p><strong>We do NOT:</strong> sell your data, share it with third parties, use it for advertising, or store it permanently.</p>
 
-<h2>3. Data Storage</h2>
-<p>Access tokens are stored temporarily in memory only and are not persisted to any database or disk storage. Tokens are lost when the server restarts.</p>
+<h2>4. TikTok API Data</h2>
+<p>DawnBot uses the following TikTok API scopes:</p>
+<ul>
+  <li><strong>user.info.basic</strong> — To display your TikTok username after login</li>
+  <li><strong>video.publish</strong> — To post videos directly to your TikTok profile</li>
+  <li><strong>video.upload</strong> — To upload video content to TikTok servers</li>
+</ul>
+<p>All data obtained through TikTok's API is handled in accordance with TikTok's Platform Policy and Developer Terms of Service.</p>
 
-<h2>4. Data Sharing</h2>
-<p>We do not sell, trade, or share your personal information with any third parties except TikTok's API which is required for the core functionality of the service.</p>
+<h2>5. Data Storage</h2>
+<p>DawnBot stores data temporarily in server memory only:</p>
+<ul>
+  <li>No personal data is written to permanent databases</li>
+  <li>All data is cleared when the server restarts</li>
+  <li>No cookies or tracking technologies are used</li>
+</ul>
 
-<h2>5. TikTok Data</h2>
-<p>Your use of TikTok features through DawnBot is subject to TikTok's own Privacy Policy available at https://www.tiktok.com/legal/privacy-policy</p>
+<h2>6. Data Sharing</h2>
+<p>We do not share your personal data with any third parties except:</p>
+<ul>
+  <li><strong>TikTok</strong> — Required for core functionality (video posting)</li>
+  <li><strong>Telegram</strong> — For bot interface functionality</li>
+</ul>
 
-<h2>6. Security</h2>
-<p>We implement reasonable security measures to protect your information. However, no internet transmission is 100% secure.</p>
+<h2>7. Data Security</h2>
+<p>We implement appropriate technical measures to protect your data including:</p>
+<ul>
+  <li>HTTPS encryption for all data transmission</li>
+  <li>Access tokens are never logged or stored in plain text</li>
+  <li>Server access is restricted to authorized personnel only</li>
+</ul>
 
-<h2>7. Your Rights</h2>
-<p>You can revoke DawnBot's access to your TikTok account at any time by going to TikTok Settings → Apps and Services → DawnBot → Remove Access.</p>
+<h2>8. Your Rights</h2>
+<p>You have the right to:</p>
+<ul>
+  <li><strong>Revoke access:</strong> TikTok Settings → Privacy → Apps and Websites → DawnBot → Remove</li>
+  <li><strong>Request deletion:</strong> Contact us to delete any stored data</li>
+  <li><strong>Access information:</strong> Request details about what data we hold</li>
+</ul>
 
-<h2>8. Changes to Privacy Policy</h2>
-<p>We may update this Privacy Policy at any time. We will notify users of significant changes through our Telegram bot.</p>
+<h2>9. Children's Privacy</h2>
+<p>DawnBot is not intended for users under 13 years of age. We do not knowingly collect personal information from children under 13.</p>
 
-<h2>9. Contact</h2>
-<p>For privacy-related questions, contact us through Telegram.</p>
+<h2>10. Changes to Privacy Policy</h2>
+<p>We may update this Privacy Policy periodically. We will notify users of significant changes through our Telegram bot.</p>
 
-<p><a href="index.html">← Back to Home</a></p>
+<h2>11. Contact Us</h2>
+<p>For privacy-related questions or concerns, contact us through our official Telegram channel.</p>
+
+<hr>
+<p><a href="terms.html">Terms of Service</a> | <a href="index.html">Home</a></p>
 </body>
 </html>
